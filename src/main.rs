@@ -55,10 +55,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     loop {
         let mss = con.poll()?;
-        if mss.is_empty() {
-            println!("No messages available right now.");
-            return Ok(());
-        }
+        // if mss.is_empty() {
+        //     println!("No messages available right now.");
+        //     return Ok(());
+        // }
 
         for ms in mss.iter() {
             for m in ms.messages() {
