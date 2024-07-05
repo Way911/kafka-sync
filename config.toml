@@ -1,7 +1,7 @@
-topic = "future.quoteTopicProcessed_tick"
+topic = "topic_name"
 
 [src]
-brokers = ["10.168.1.2:9092", "10.168.1.3:9092"]
+brokers = ["host1:9092", "host2:9092"]
 group_id = "test"
 auto_offset_reset = "earliest" #latest
 enable_auto_commit = true
