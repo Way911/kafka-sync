@@ -1,5 +1,3 @@
-#![feature(lazy_cell)]
-
 use config::CFG;
 use kafka::{
     consumer::{Consumer, FetchOffset, GroupOffsetStorage},
